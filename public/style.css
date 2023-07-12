@@ -1,0 +1,22 @@
+/* footer link */
+form p a:hover {
+    background-color: rgb(213, 169, 229);
+    border-radius: 10px;
+}
+form p a img:hover {
+    transform: scale(1.1) rotate(-20deg);
+}
+
+@media (max-height: 900px) {
+    #div-container {
+        padding: 20%;
+    }
+
+    label, p {
+        font-size: 0.5rem;
+    }
+
+    form p a img {
+        height: 15px;
+    }
+}

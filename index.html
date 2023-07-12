@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign-in</title>
+    <link href="./public/favicon.png" rel="icon" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./public/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="div-container" class="vh-100 vw-100 d-flex justify-content-center align-items-center" style="background: url('./public/bg.jpg') center center; background-size: cover; font-family: 'Alice', serif;">
+    <div id="div-border" class="p-2" style="background: linear-gradient(-25deg, rgba(64,18,139,1) 20%, rgba(147,54,180,1) 100%);">
+      <main id="sign-in-section" class="form-signin bg-secondary-subtle p-3" style="max-width: 650px; min-height: 450px;">
+        <form action="/" method="post" >
+          <h1 class="h1 mb-4 text-secondary-emphasis text-center fst-italic p-1 fs-1">Sign-in to My Newsletter!</h1>      
+          <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="floatingName" name="fname" placeholder="Name">
+            <label for="floatingName">First name</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="floatingLastName" name="lname" placeholder="Last name">
+            <label for="floatingLastName">Last name</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <button class="btn w-100 p-2 text-light text-uppercase fs-5 border-0"  style="background: linear-gradient(-25deg, rgba(64,18,139,1) 20%, rgba(147,54,180,1) 100%);" type="submit"><span>Sign me up</span></button>
+          <p class="pt-3 text-end">&copy; 
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            jessicasantosb
+            <a class="p-2" href="https://github.com/jessicasantosb" target="_blank">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="height: 30px;" />
+            </a>
+          </p>
+        </form>
+      </main>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
