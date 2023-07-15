@@ -5,6 +5,7 @@ const https = require("https");
 
 const app = express();
 
+// app.use(express.static(path.join(__dirname, "app.js")));
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -16,7 +17,6 @@ app.post("/", (req, res) => {
     const firstName = req.body.fname;
     const lastName = req.body.lname;
     const email = req.body.email;
-    console.log(firstName)
     const data = {
         members: [
             {
@@ -34,7 +34,7 @@ app.post("/", (req, res) => {
     const url = "https://us21.api.mailchimp.com/3.0/lists/3a04302d4e";
     const option = {
         method: "POST",
-        auth: "jessica:619a7c130e8e14f17de151ae443ae8b2-us21"
+        auth: "jessica:4e1c9de5c49b479e4124d4fd534c25ba-us21"
     }
 
     const request = https.request(url, option, (response) => {
@@ -52,10 +52,10 @@ app.post("/", (req, res) => {
     request.end();
 });
 
-app.post("/failure", (req, res) => {
+app.post("/failure.html", (req, res) => {
     res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Listening on port 3000");
+app.listen(process.env.PORT || 4000, () => {
+    console.log("Listening on port 4000");
 });

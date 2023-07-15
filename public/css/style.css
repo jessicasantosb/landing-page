@@ -3,6 +3,7 @@ form p a:hover {
     background-color: rgb(213, 169, 229);
     border-radius: 10px;
 }
+
 form p a img:hover {
     transform: scale(1.1) rotate(-20deg);
 }
@@ -13,7 +14,7 @@ form p a img:hover {
     }
 
     label, p {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 
     form p a img {
