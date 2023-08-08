@@ -6,7 +6,7 @@
 <img align="right" alt="PC GIF" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/PC.gif" width="190" />
 <br>
 <h1 align="center">
-    <a href="https://jessicasantosb.github.io/calculator/">See live preview</a>
+    <a href="https://landingpage-p8g0.onrender.com/">See live preview</a>
 </h1>
 <br>
 <p align="center">🚀 Created by Jessica Bandeira</p>
